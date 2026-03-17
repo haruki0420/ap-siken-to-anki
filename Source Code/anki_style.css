@@ -1,0 +1,173 @@
+.card {
+  font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  color: #333333;
+  background-color: #f5f7fa;
+  padding: 10px;
+}
+
+/* =========================================
+   1. 問題文と選択肢の枠
+   ========================================= */
+.question-box {
+  border: 2px solid #2b5f8c;
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.question-box ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.choices-box {
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+.choices-box ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.choices-box li {
+  display: flex;
+  align-items: center; 
+  padding: 8px 0;
+  border-bottom: 1px dashed #eeeeee;
+}
+.choices-box li:last-child {
+  border-bottom: none;
+}
+.choices-box li .lbl {
+  font-weight: bold;
+  margin-right: 10px;
+  min-width: 25px;
+}
+.choices-box li .val img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================================
+   2. 解説の枠と、各選択肢の解説デザイン
+   ========================================= */
+.explanation-box {
+  border-top: 3px solid #4CAF50;
+  background-color: #ffffff;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.explanation-box ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 独立したカード風デザイン */
+.explanation-box li {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-left: 5px solid #607d8b;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 13px;
+  color: #444444;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+/* タイトルバッジ化 */
+.explanation-box li .cite {
+  display: inline-block;
+  font-weight: bold;
+  color: #2b5f8c;
+  background-color: #e3f2fd;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.explanation-box li .m {
+  color: #d32f2f;
+  font-weight: bold;
+  border-bottom: 2px solid #d32f2f;
+  font-style: normal;
+  margin-right: 5px;
+}
+
+.answer-badge {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.correct-answer {
+  color: #d32f2f;
+  background-color: #ffebee;
+  border-radius: 3px;
+}
+.correct-answer .lbl, .correct-answer .val {
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================================
+   3. プログラムコード・引用ブロックのデザイン
+   ========================================= */
+.card pre,
+.card blockquote,
+.card .code,
+.card .quote,
+.card .mono,
+.card .pre {
+  display: block;
+  background-color: #f0f3f5;
+  border-left: 4px solid #cfd8dc;
+  padding: 12px 15px;
+  margin: 15px 0;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 14px;
+  color: #333333;
+  border-radius: 0 4px 4px 0;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+
+.card .code,
+.card .mono,
+.card .pre {
+  white-space: pre-wrap; 
+}
+
+p code, li code, p .mono, li .mono, p .pre, li .pre {
+  background-color: #f0f3f5;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Consolas', 'Courier New', monospace;
+  color: #c62828;
+}

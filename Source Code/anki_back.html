@@ -1,0 +1,27 @@
+<div class="question-box">
+  {{問題}}
+</div>
+
+{{#選択肢ア}}
+<div class="choices-box">
+  <ul>
+    <li id="ans-a"><span class="lbl">ア:</span> <span class="val">{{選択肢ア}}</span></li>
+    <li id="ans-b"><span class="lbl">イ:</span> <span class="val">{{選択肢イ}}</span></li>
+    <li id="ans-c"><span class="lbl">ウ:</span> <span class="val">{{選択肢ウ}}</span></li>
+    <li id="ans-d"><span class="lbl">エ:</span> <span class="val">{{選択肢エ}}</span></li>
+  </ul>
+</div>
+{{/選択肢ア}}
+
+<div class="explanation-box">
+  <div class="answer-badge">正解: {{正解}}</div>
+  {{解説}}
+</div>
+
+<script>
+  var ans = "{{正解}}";
+  if (ans.includes("ア")) { var el = document.getElementById("ans-a"); if(el) el.classList.add("correct-answer"); }
+  if (ans.includes("イ")) { var el = document.getElementById("ans-b"); if(el) el.classList.add("correct-answer"); }
+  if (ans.includes("ウ")) { var el = document.getElementById("ans-c"); if(el) el.classList.add("correct-answer"); }
+  if (ans.includes("エ")) { var el = document.getElementById("ans-d"); if(el) el.classList.add("correct-answer"); }
+</script>
