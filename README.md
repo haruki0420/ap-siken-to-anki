@@ -44,7 +44,7 @@ With just a single click or keyboard shortcut, you can effortlessly export quest
     "webBindPort": 8765,
     "webCorsOriginList": [
         "http://localhost",
-        "[https://www.ap-siken.com](https://www.ap-siken.com)"
+        "https://www.ap-siken.com"
     ]
 }
 ```
